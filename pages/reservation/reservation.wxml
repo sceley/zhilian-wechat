@@ -1,0 +1,40 @@
+<!--pages/reservation/reservation.wxml-->
+<view class='reservation'>
+  <view class='table'>
+    <view class='table-header'>
+      <view class='table-header-title'>时间</view>
+      <view class='table-header-title'>实验室</view>
+      <view class='table-header-title'>座位</view>
+      <view class='table-header-title'>状态</view>
+      <view class='table-header-title'>操作</view>
+    </view>
+    <view class='table-body'>
+      <view class='section' wx:for="{{reservations}}" wx:for-item="reservation" wx:key="index">
+        <view class='section-item'>
+          <view>{{reservation.date}}</view>
+          <view>{{reservation.start}}</view>
+          <view>{{reservation.end}}</view>
+        </view>
+        <view class='section-item'>{{reservation.exp_name}}</view>
+        <view class='section-item'>{{reservation.seat}}</view>
+        <view class='section-item'>{{reservation.status}}</view>
+        <view id='{{reservation.id}}' bindtap='bindCancel' class='section-item'>取消</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view style='display: {{visible ? "block" : "none"}};'>
+  <view class='modal-mask'></view>
+  <view id='modal-wrap' class='modal-wrap' bindtap='bindCancelModal'>
+    <view class='modal'>
+      <view class='modal-body'>
+        <icon class='icon-status' type="{{ iconType }}" size='40' />
+        <text class='description-status'>{{ description }}</text>
+      </view>
+      <view class='modal-footer'>
+        <view bindtap='bindSureCancel' class='btn-sure'>确定</view>
+      </view>
+    </view>
+  </view>
+</view>

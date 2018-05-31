@@ -1,0 +1,37 @@
+<!--pages/profile/profile.wxml-->
+<view class='profile'>
+  <view class='section'>
+    <view class='section-header'>
+      基本信息
+    </view>
+    <view class='section-body'>
+      <view class='input-group'>
+        <text class='input-group-addon'>姓名</text>
+        <text class='form-control'>{{ userInfo.name }}</text>
+      </view>
+      <view class='input-group'>
+        <text class='input-group-addon'>性别</text>
+        <text class='form-control'>{{ userInfo.gender? '男':'女' }}</text>
+      </view>
+      <view class='input-group'>
+       <text class='input-group-addon'>专业</text>
+       <text>{{ userInfo.major }}</text>
+      </view>
+      <view class='input-group'>
+        <text class='input-group-addon'>年级</text>
+        <text class='form-control'>{{ userInfo.grade }}</text>
+      </view>
+    </view>
+  </view>
+  <view class='section'>
+    <view class='section-header'>
+      联系方式
+    </view>
+    <view class='section-body'>
+      <view class='input-group'>
+        <text class='input-group-addon'>手机号</text>
+        <text class='form-control'>{{ userInfo.mobile }}</text>
+      </view>
+    </view>
+  </view>
+</view>

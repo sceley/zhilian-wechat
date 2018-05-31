@@ -1,0 +1,16 @@
+/* pages/login/login.wxss */
+
+.login {
+    background-color: #efeff4;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 20rpx 0;
+}
+
+.form-login-wrap {
+  margin-top: 20px;
+}
+
+.btn-register {
+  margin-top: 10px;
+}

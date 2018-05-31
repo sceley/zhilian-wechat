@@ -1,0 +1,127 @@
+/**app.wxss**/
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+.brand-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand {
+  width: 172rpx;
+  height: 156rpx;
+  margin: 20rpx;
+}
+
+.brand-description {
+  color: #aaa;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  border-bottom: 1px solid #e8e8e8;
+  background: #fff;
+}
+
+.picker-selector {
+  height: 45px;
+  display: flex;
+  align-items: center;
+}
+
+.input-group:last-child {
+  border-bottom: none;
+}
+
+.input-group-addon {
+  width: 100px;
+  padding-left: 10px;
+}
+
+.form-control {
+  flex: 1;
+  height: 45px;
+}
+
+.btn-area {
+  margin-top: 20px;
+}
+
+.btn {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 4px;
+  height: 45px;
+  line-height: 45px;
+}
+
+.modal-mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 1000;
+}
+
+.modal-wrap {
+  position: fixed;
+  overflow: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  width: 80%;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.modal-body {
+  padding: 12px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal-footer {
+  border-top: 1px solid #e8e8e8;
+  border-radius: 0 0 4px 4px;
+  text-align: center;
+}
+
+.icon-status {
+  margin-top: 10px;
+}
+
+.description-status {
+  margin-top: 10px;
+}
+
+.btn-sure {
+  color: #00c200;
+  font-size: 14px;
+  padding: 8px 0;
+}

@@ -1,0 +1,28 @@
+/**index.wxss**/
+
+.index {
+  background-color: #efeff4;
+  min-height: 100vh;
+}
+
+.scanning-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 130px;
+  position: fixed;
+  bottom: 50px;
+  border-radius: 100%;
+  box-shadow: 2px 0px 6px rgba(0,21,41,.35);
+}
+
+.scanning-barcode {
+  width: 128rpx;
+  height: 128rpx;
+}
+
+.scanning-description {
+  color: #aaa;
+}

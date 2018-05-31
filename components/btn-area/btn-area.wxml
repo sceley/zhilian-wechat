@@ -1,0 +1,9 @@
+<!--components/btn-area/btn-area.wxml-->
+<view class='btn-area'>
+  <navigator url="/pages/login/login">
+    <button type='primary' class='btn'>登录</button>
+  </navigator>
+  <navigator url='/pages/logup/logup'>
+    <button type='default' class='btn btn-register'>注册</button>
+  </navigator>
+</view>

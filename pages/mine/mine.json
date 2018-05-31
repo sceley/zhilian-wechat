@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "btn-area": "/components/btn-area/btn-area"
+  }
+}

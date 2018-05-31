@@ -1,0 +1,25 @@
+<!--pages/mine/mine.wxml-->
+<btn-area wx:if="{{!login}}"></btn-area>
+<view wx:else class='mine'>
+  <view class='userInfo'>
+    <image class='userInfo-avatar' src='/image/user.png'></image>
+    <text class='userInfo-name'>{{ userInfo.account }}</text>
+  </view>
+  <view class='menu'>
+    <navigator class='menu-item media' url="/pages/profile/profile">
+      <view class='media-left media'>
+        <image class='menu-item-icon' src='/image/information.png'></image>
+        <text>个人信息</text>
+      </view>
+      <image class='media-right item-path' src='/image/path.png'></image>
+    </navigator>
+    <navigator class='menu-item media' url="/pages/reservation/reservation">
+      <view class='media-left media'>
+        <image class='menu-item-icon' src='/image/booked.png'></image>
+        <text>我的预约</text>
+      </view>
+      <image class='media-right item-path' src='/image/path.png'></image>
+    </navigator>
+  </view>
+  <button type='default' class='btn' bindtap='handleLogout'>退出登录</button>
+</view>

@@ -1,0 +1,39 @@
+<!--pages/login/login.wxml-->
+
+<view class='login'>
+  <view class="brand-wrap">
+    <image class='brand' src="/image/logo.png"></image>
+    <text class='brand-description'>欢迎登录</text>
+  </view>
+  <view class='form-login-wrap'>
+    <form bindsubmit="formSubmit">
+      <view class="input-group">
+        <text class='input-group-addon'>账号</text>
+        <input name='account' class='form-control' type='text' placeholder="输入账号" />
+      </view>
+      <view class="input-group">
+        <text class='input-group-addon'>密码</text>
+        <input name='password' class='form-control' type='text' password='true' placeholder="输入密码" />
+      </view>
+      <view class="btn-area">
+        <button type='primary' class='btn' formType="submit">登录</button>
+        <button bindtap='navigation' type='default' class='btn btn-register'>注册</button>
+      </view>
+    </form>
+  </view>
+</view>
+
+<view style='display: {{visible ? "block" : "none"}};'>
+  <view class='modal-mask'></view>
+  <view id='modal-wrap' class='modal-wrap'>
+    <view class='modal'>
+      <view class='modal-body'>
+        <icon class='icon-status' type="{{ iconType }}" size='40' />
+        <text class='description-status'>{{ description }}</text>
+      </view>
+      <view class='modal-footer'>
+        <view bindtap='bindSure' class='btn-sure'>确定</view>
+      </view>
+    </view>
+  </view>
+</view>

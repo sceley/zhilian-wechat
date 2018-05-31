@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container index">
+  <view class="brand-wrap">
+      <image class='brand' src="/image/logo.png"></image>
+      <text class='brand-description'>智联科技</text>
+  </view>
+  <button type='default' plain="true" bindtap='bindScanning' class='scanning-wrap'>
+    <image class='scanning-barcode' src="/image/barcode.png"></image>
+    <text class='scanning-description'>扫码进入</text>
+  </button>
+</view>
+
+<view style='display: {{visible ? "block" : "none"}};'>
+  <view class='modal-mask'></view>
+  <view id='modal-wrap' class='modal-wrap' bindtap='bindCancelModal'>
+    <view class='modal'>
+      <view class='modal-body'>
+        <icon class='icon-status' type="{{ iconType }}" size='40' />
+        <text class='description-status'>{{ description }}</text>
+      </view>
+      <view class='modal-footer'>
+        <view bindtap='bindCancelModal' class='btn-sure'>确定</view>
+      </view>
+    </view>
+  </view>
+</view>

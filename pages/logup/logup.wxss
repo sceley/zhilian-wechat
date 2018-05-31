@@ -1,0 +1,17 @@
+/* pages/logup/logup.wxss */
+
+.logup {
+  min-height: 100vh;
+  background: #efeff4;
+  box-sizing: border-box;
+  padding: 20rpx 0;
+}
+.section-header {
+  padding: 10px;
+}
+.section-body {
+  background: #fff;
+}
+.btn-register {
+  margin-bottom: 20px;
+}
